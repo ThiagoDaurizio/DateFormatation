@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudos - Formatação de Datas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <select id="selector" onchange="onchangeSelect()">
+      <option disabled>( Composto )</option>
+      <option value="actualDate" selected>Data Atual</option>
+      <option value="actualTime">Tempo Atual</option>
+      <option value="full">Completo Atual</option>
+      <option disabled>( dia, mês e ano )</option>
+      <option value="day">Dia</option>
+      <option value="month">Mês</option>
+      <option value="year">Ano</option>
+      <option disabled>( horas, minutos e segundos )</option>
+      <option value="hours">Hora</option>
+      <option value="minutes">Minuto</option>
+      <option value="seconds">Segundo</option>
+    </select>
+  </div>
+  <div>
+    <button class='btn-locale' data-locale="en-US">Unite States</button>
+    <button class='btn-locale' data-locale="pt-BR">Brasil</button>
+    <button class='btn-locale' data-locale="es-ES">Espanha</button>
+  </div>
+
+  <div id="preview">
+
+  </div>
+
+  <template id="template-preview">
+    <span class="comment"></span>
+    <pre class="code"></pre>
+
+  </template>
+
+  <script src="./system.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "datas-manipulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server -p 5555 -c-1 --watch ./src",
+    "start": "http-server -p 5550 -c-1 ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
